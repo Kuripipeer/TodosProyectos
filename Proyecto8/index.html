@@ -55,12 +55,48 @@
                                     required placeholder="Ingresa la descripción de la tarea"></textarea>
                             </div>
                         </div>
-
-
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         <button type="submit" class="btn btn-primary" id="btnGuardar">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <form name="formularioEditar" id="formularioEditar" action="index.html" method="get">
+        <div class="modal fade" id="editarTarea" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modificar esta tarea</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="nombreEditar">Nombre:</label>
+                                <input type="text" id="nombreEditar"  name="nombreEditar" class="form-control" required
+                                    placeholder="Ingresa el nombre de la tarea">
+                            </div>
+                            <div class="col-12">
+                                <label for="fechaEditar">Fecha de la tarea:</label>
+                                <input type="date" id="fechaEditar"  name="fechaEditar" class="form-control" required
+                                    placeholder="Ingresa una fecha">
+                            </div>
+                            <div class="col-12">
+                                <label for="descripcionEditar">Descripción:</label>
+                                <textarea name="descripcionEditar" id="descripcionEditar" cols="30" rows="10"
+                                    class="form-control" required
+                                    placeholder="Ingresa la descripción de la tarea"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="hidden" mame="idTarea" id="idTarea">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary" id="btnGuardarEditar">Guardar</button>
                     </div>
                 </div>
             </div>
