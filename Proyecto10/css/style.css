@@ -1,0 +1,12 @@
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+.imagenProducto{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: 0px auto;
+}
