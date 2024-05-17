@@ -1,9 +1,10 @@
 h1 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: "Creepster", system-ui;
     text-align: center;
+    font-size: 50px;
 }
 
-.imagenProducto{
+.imagenProducto {
     width: 250px;
     height: 250px;
     object-fit: cover;
